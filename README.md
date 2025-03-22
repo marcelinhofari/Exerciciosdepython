@@ -1,2 +1,1 @@
-# exx001
-Exercicios de python
+alguns exercicios de python 
