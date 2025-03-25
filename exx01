@@ -1,1 +1,28 @@
-exercicio 1 de python.
+def calculadora_basica():
+    while True:
+        try:
+            n1 = float(input('Digite um número: '))
+            n2 = float(input('Digite outro número: '))
+            operacao = input('Escolha a operação (+, -, *, /) ou digite "sair" para encerrar: ')
+            
+            if operacao == 'sair':
+                print("Saindo da calculadora...")
+                break
+            elif operacao == '+':
+                print(f'{n1} + {n2} = {n1 + n2}')
+            elif operacao == '-':
+                print(f'{n1} - {n2} = {n1 - n2}')
+            elif operacao == '*':
+                print(f'{n1} * {n2} = {n1 * n2}')
+            elif operacao == '/':
+                if n2 != 0:
+                    print(f'{n1} / {n2} = {n1 / n2}')
+                else:
+                    print('Erro: Divisão por zero!')
+            else:
+                print('Operação inválida!')
+
+        except ValueError:
+            print("Erro: Por favor, insira um número válido.")
+        
+calculadora_basica()
