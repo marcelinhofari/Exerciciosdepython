@@ -1,0 +1,7 @@
+def digitador ():
+    n=input('Escreva seu nome:')
+    nome_invertido = n[::-1]
+    print(nome_invertido)
+
+digitador()
+      
