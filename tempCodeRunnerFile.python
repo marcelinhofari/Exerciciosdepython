@@ -1,7 +1,47 @@
-def digitador ():
-    n=input('Escreva seu nome:')
-    nome_invertido = n[::-1]
-    print(nome_invertido)
-
-digitador()
-      
+def calculadora_marcelo():
+    while True:
+        print("\ncalculadora do marcelo")
+        print("1. Soma")
+        print("2. Subtração")
+        print("3. Multiplicação")
+        print("4. Divisão")
+        print("0. Sair")
+        try:
+            opcao = int(input('Digite um numero?'))
+        except ValueError:  
+            print("Opção inválida. Digite um numero inteiro!")
+            continue
+        if opcao == 0:
+            print('Saindo da Calculadora.')
+            break
+        elif 1 <= opcao <= 4:
+            try:
+                num1=int(input("Digite o primeiro numero:"))
+                num2=int(input("Digite o segundo numero:"))
+            except ValueError:
+                print('Entrada inválida.Digite um numeros.')
+                continue
+        if opcao == 1:
+            resultado=num1+num2
+            print(f'Resultado:{resultado: .2f}')
+        elif opcao == 2:
+            resultado=num1-num2
+            print(f'Resultado:{resultado: .2f}')
+        elif opcao == 3:
+            resultado=num1*num2
+            print(f'Resultado:{resultado: .2f}')
+        elif opcao == 4:
+            resultado=num1/num2
+            print(f'Resultado:{resultado: .2f}')
+        elif opcao == 4:
+            if  num2 == 0:
+                print('DIvisão por zero!')
+            else:
+                resultado = num1/num2
+                print(f'Resultado:{resultado:.2f}')
+    else:
+        print('Opção inválida!')
+if __name__ == '__main__':
+    calculadora_marcelo()
+    
+        
