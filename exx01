@@ -1,6 +1,6 @@
 def calculadora_basica():
     while True:
-        try:
+         try:
             n1 = float(input('Digite um número: '))
             n2 = float(input('Digite outro número: '))
             operacao = input('Escolha a operação (+, -, *, /) ou digite "sair" para encerrar: ')
