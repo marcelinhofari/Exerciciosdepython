@@ -26,4 +26,4 @@ def calculadora_basica():
             print("Erro: Por favor, insira um número válido.")
         
 calculadora_basica()
-#tanks
+ #tanks
